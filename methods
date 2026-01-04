@@ -1,0 +1,19 @@
+package Interface;
+
+//class is a blueprint of object.it defines the properties (data memebers) and behaviour(methods) that the objects created from it will have.
+class Computer{
+   public void playMusic(){  //method want access modifier(public,private,default) and return type(void,int,string)
+    System.out.println("Playing music");
+   }
+   public String getWire(int cost){
+    return "wire";
+   }
+}
+public class Practice {
+    public static void main(String[] args) {
+        Computer obj=new Computer();
+        obj.playMusic();
+       String str=obj.getWire(1);
+       System.out.println(str);
+    }
+}
