@@ -1,0 +1,34 @@
+package Interface;
+
+class Human{
+   int age;
+   String name;
+
+  public int getAge(){
+    return age; 
+  }
+  public void setAge(int age,Human obj){
+    //age=age;//both can be local variable
+    //but we need instance variable 1st
+   // Human obj1=new Human();//we are creating new object but this give also 0
+   //obj1.age=age;
+   //obj.age=age;//now this work because we passing a object not creating a object but rather than passing we use this keyword
+   //this means it is a keyword that represents current object
+    this.age=age;
+  }
+  public String getName(){
+    return name;
+  }
+  public void setName(String name){
+    this.name=name;
+  }
+}
+public class Practice {
+    public static void main(String[] args) {
+       Human obj=new Human();
+       obj.setAge(12,obj);
+       obj.setName("Sanket");
+       System.out.println(obj.getName());
+       System.out.println(obj.getAge());
+    }
+}
