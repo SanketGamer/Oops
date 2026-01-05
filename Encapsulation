@@ -1,0 +1,33 @@
+package Interface;
+
+//Encapsulation->Wrapping/Binding data (variables) and methods together in a single class and controlling access to that data using access modifiers.
+//that means encapsulation is every time when age,name restricted(sesitive) we can use in same class using methods
+class Human{
+  private int age=11;//this age variable only access in same class
+  private String name="Navin";
+  
+  //now we access the data members using methods
+  public int getAge(){
+    return age; //i can access because it same class
+  }
+  public void setAge(int a){
+    age=a;
+  }
+  public String getName(){
+    return name;
+  }
+  public void setName(String n){
+    name=n;
+  }
+}
+public class Practice {
+    public static void main(String[] args) {
+       Human obj=new Human();
+       obj.setAge(12);
+       obj.setName("Sanket");
+    //    obj.age=12;
+    //    obj.name="SSR";
+       System.out.println(obj.getName());//We see we can access the data
+       System.out.println(obj.getAge());
+    }
+}
