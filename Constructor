@@ -1,0 +1,42 @@
+package Interface;
+//A constructor is a special method-like block whose name is the same as the class name and is used to initialize data members when an object is created.
+class Human{
+   int age;
+   String name;
+
+   //Default constructor
+   public Human(){
+    age=12;
+    name="john";
+   }
+   //Parameterize constructor
+   public Human(int age,String name){
+    this.age=age;
+    this.name=name;
+   }
+
+  public int getAge(){
+    return age; 
+  }
+  public void setAge(int age){
+    
+  }
+  public String getName(){
+    return name;
+  }
+  public void setName(String name){
+    this.name=name;
+  }
+}
+public class Practice {
+    public static void main(String[] args) {
+       Human obj=new Human();
+       Human obj1=new Human(18,"Ram");
+       obj.setAge(12);
+       obj.setName("Sanket");
+       System.out.println(obj.getName());
+       System.out.println(obj.getAge());
+       System.out.println(obj1.getName());
+       System.out.println(obj1.getAge());
+    }
+}
