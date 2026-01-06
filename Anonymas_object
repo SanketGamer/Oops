@@ -1,0 +1,5 @@
+class A{
+//logic or syntax here
+}
+
+new A(); // this called anonymas object
