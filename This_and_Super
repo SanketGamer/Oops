@@ -1,0 +1,27 @@
+package Interface;
+
+//every constructor by default has a method called super();
+//super()-> call a constructor in super class
+class A extends Object{//by default every super/parent class in java extends a object
+  public A(){
+    System.out.println("in A");
+  }
+  public A(int n){
+    System.out.println("in A int");
+  }
+}
+class B extends A{
+   public B(){
+    System.out.println("in B");
+  }
+  public B(int n){
+    //super();//it call in A because we not pass any argumant in super()
+    this();//this will execute the constructor of a same class means it call B default one
+    System.out.println("in b int");
+  }
+}
+public class Practice {
+    public static void main(String[] args) {
+      B obj=new B(5);
+    }
+}
