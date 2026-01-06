@@ -3,8 +3,8 @@ package Interface;
 //single inheritance - A->B
 //multilevel inheritance - A->B->C->D (one by one)
 //multiple inheritance - A(parent)    B(parent)
-                          \  /
-                           C(child)
+                          \           /
+                             C(child)
 
 EX:
 //we can no use multiple inheritance in java because if 2 parent have same methods how i choose one thats why we can not use.this called Amguity problem
