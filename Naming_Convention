@@ -1,0 +1,6 @@
+//Naming Convention
+//Camel casing
+//class - Calc(1st c should be upper)
+//variable and methods - always start with small letter like mark,show()
+//constants - all capital(uppercase) like PIE,BRAND it makes u more code readable
+//showMyMark() this is also more readable called camel casing
