@@ -1,0 +1,38 @@
+package Interface;
+
+//Method overriding - When a child class writes the SAME method (same name, same parameters) 
+// that already exists in the parent class, then the child class’s method is executed, not the parent’s.
+
+class A{
+
+    public void show(){
+        System.err.println("in A show");
+    }
+    public int add(int n1,int n2){
+        return n1+n2;
+    }
+}
+
+class B extends A{
+  
+    public void show(){
+        System.out.println("in B show");
+    }
+    public int add(int n1,int n2){ //this add overriding the A add method
+        return n1+n2+1;
+    }
+    
+}
+
+
+public class Practice {
+    public static void main(String[] args) {
+      B obj=new B();
+      obj.show();
+     int r1= obj.add(2, 3);
+     System.out.println(r1);
+    }
+}
+
+
+
