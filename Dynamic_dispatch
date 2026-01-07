@@ -1,0 +1,40 @@
+package Interface;
+
+class Computer{
+
+}
+class Laptop extends Computer{
+
+}
+
+class A{
+  public void show(){
+    System.out.println("in A show");
+  }
+}
+
+
+class B extends A{
+
+     public void show(){
+    System.out.println("in B show");
+  }
+}
+
+
+
+public class Practice {
+    public static void main(String[] args) {
+      A obj = new A(); //we can refer the obj variable as type A and implemention type B
+      //Computer obj1=new Laptop();
+      obj.show();
+
+      obj=new B();
+      obj.show();
+    }
+}
+
+//main thing No matter which reference is used, the method that runs depends on the object’s implementation at runtime. This is called Dynamic Method Dispatch.
+
+
+
