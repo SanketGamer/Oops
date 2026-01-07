@@ -1,0 +1,9 @@
+         
+          same class, same package sub class, same pacakage non-sub-class, diff package, diff package non-subclass
+public  -  all true
+
+private -   true            false                  false                     false              false
+
+protected - true            true                   true                      true               false
+
+difault -   true            true                   true                      true               true
