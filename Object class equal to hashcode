@@ -1,0 +1,42 @@
+package Interface;
+
+//Object class equals to toString hashcode in java
+
+//main thing is object have multiple methods methods 
+
+
+class Laptop{
+    String model;
+    int price;
+
+    public String toString(){
+        return model + " " +price;
+    }
+
+    public boolean equals(Laptop that){
+      if(this.model.equals(that.model) && this.price == that.price){
+        return true;
+      }
+      else return false;
+    }
+}
+
+
+public class Practice {
+    public static void main(String[] args) {
+     Laptop obj=new Laptop();
+     obj.model="Lenovo";
+     obj.price=50000;
+
+     Laptop obj2=new Laptop();
+     obj2.model="Lenovo";
+     obj2.price=50000;
+
+     boolean res=obj.equals(obj2);
+     System.out.println(res);     //every time when we call object by default it will toString() method
+    }
+}
+
+
+
+
