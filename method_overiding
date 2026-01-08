@@ -1,0 +1,34 @@
+package Interface;
+//final class - once we asign in class we stop inheritance means we stop extends
+//final make variable become constant
+//final method - when we asign final in method we stop method overriding
+ class Calc{
+
+ public final void show(){
+        System.out.println("in A show");
+    }
+    public void add(int a,int b){
+        System.out.println(a+b);
+    }
+
+}
+
+class AdvCalc extends Calc{
+ 
+    public void show(){
+        System.out.println("in Jhon");
+    }
+
+}
+
+public class Practice {
+    public static void main(String[] args) {
+     AdvCalc obj=new AdvCalc();
+     obj.show();
+     obj.add(2, 6);
+    }
+}
+
+
+
+
