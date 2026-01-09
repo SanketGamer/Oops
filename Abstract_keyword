@@ -1,0 +1,44 @@
+package Interface;
+
+//abstract keyword
+//1. we can not create object of a abstract class. we can create a refference of a object class
+//2. abstract keyword can be use in method but we have to asign abstract class means a abstract class not need abstract method but a abstract method need abstract class
+//3. If we want to use an abstract class, we must inherit it in a child class and implement its abstract methods.
+
+abstract class Car{
+
+   public abstract void drive();
+
+   public abstract void fly();
+
+   public void playMusic(){
+     System.out.println("play music");
+   }
+
+}
+
+class WagonR extends Car{
+
+    public void fly(){
+        System.out.println("flying");
+    }
+     public void drive(){
+        System.out.println("Driving...");
+     }
+
+}
+
+public class Practice {
+    public static void main(String[] args) {
+
+        WagonR obj=new WagonR();
+        obj.drive();
+        obj.playMusic();
+        obj.fly();
+
+    }
+}
+
+
+
+
