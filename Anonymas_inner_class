@@ -1,0 +1,28 @@
+package Interface;
+
+class A{
+
+    public void show(){
+        System.out.println("in a Show");
+    }
+
+}
+
+public class Practice {
+    public static void main(String[] args) {
+
+        A obj=new A() // this is called anonymas inner class
+        {
+             public void show(){
+              System.out.println("in a Show");
+              }
+
+        };
+        obj.show();
+
+    }
+}
+
+
+
+
