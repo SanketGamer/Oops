@@ -23,6 +23,39 @@ public class Practice {
     }
 }
 
+//
+package Interface;
+
+//can u do inner class inside anonymas and abstract class
+//so in abstract class we can use anonymas inner class
+abstract class A{
+
+    public abstract void show();
+
+}
+
+
+public class Practice {
+    public static void main(String[] args) {
+
+       A obj=new A(){
+        public void show(){
+            System.out.println("new show");
+        }
+        public void config(){
+            System.out.println("in config");
+        }
+       };
+       obj.show();
+
+    }
+}
+
+
+
+
+
+
 
 
 
