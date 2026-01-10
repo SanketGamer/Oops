@@ -1,0 +1,47 @@
+package Interface;
+
+//why we need interface
+
+abstract class Computer{
+
+    public abstract void code();
+}
+class Laptop extends Computer{
+
+    public void code(){
+        System.out.println("code,compile,and run");
+    }
+}
+
+class Deskstop extends Computer{
+     public void code(){
+        System.out.println("code,compile,and run : faster");
+    }
+}
+
+/// As a developer, we can work on different machines like Laptop or Desktop.
+// Since coding is a behavior, not an identity, we use an interface to represent it.
+// This allows Developer to depend on abstraction rather than concrete classes.
+
+class Developer{
+
+    public void devApp(Computer lap){
+        lap.code();
+    }
+}
+
+public class Practice {
+    public static void main(String[] args) {
+
+        Computer lap=new Laptop();
+        Computer desk=new Deskstop();
+
+        Developer sanket=new Developer();
+        sanket.devApp(lap);
+      
+    }
+}
+
+
+
+
