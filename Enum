@@ -1,0 +1,50 @@
+package Interface;
+
+
+//enum - An enum is a special data type used to define a fixed set of named constant values.
+enum Status{
+    Running,Failed,Pending,Success;  //all are objects
+}
+
+public class Practice {
+    public static void main(String[] args) {
+     
+        //Status s = Status.Success;
+        Status[] s=Status.values();
+        //System.out.println(s.ordinal());//print index or order
+        //System.out.println(s[3]);
+
+        //enhance for loop
+        for(Status ss:s){
+            System.out.println(ss +":"+ss.ordinal());
+        }
+    }
+}
+
+      //if else
+
+         Status s=Status.Pending;
+        if(s==Status.Running) System.out.println("All Good");
+        else if(s==Status.Failed) System.out.println("Try Again");
+        else if(s==Status.Success) System.out.println("Done");
+        else System.out.println("Pending");
+
+
+//Switch case
+
+ Status s=Status.Pending;
+
+        switch (s) {
+            case Running:
+                System.out.println("All good");
+                break;
+            case Failed:
+               System.out.println("Try again");
+               break;
+            case Pending:
+                System.out.println("Pending");
+                break;
+            default:
+                System.out.println("Done");
+                break;
+        }
