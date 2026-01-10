@@ -1,0 +1,66 @@
+package Interface;
+
+//interface - An interface in Java is used to achieve abstraction and multiple inheritance, and it helps in designing loosely coupled and scalable applications.
+
+//mostly we use interface for design optimally
+
+//in interface by default every method is abstract class
+//every variable by default final and static
+
+//class to class -  we use extends
+//interface to class - we use implements
+//interface to interface - we use extends
+
+interface A{
+
+    int age=22;   //every variable by default final and static
+    String area="Himachal";
+
+     void show();
+     void config();
+
+}
+
+interface X{
+
+    void run();
+}
+
+//access interface to interface we have to do extends
+interface Y extends X{
+
+
+}
+
+//if we implement the interface by default the class is abstract
+class B implements A,Y{
+   
+    public void show(){
+        System.out.println("in show");
+    }
+    public void config(){
+        System.out.println("in config");
+    }
+    public void run(){
+        System.out.println("in run");
+    }
+
+}
+
+
+
+
+public class Practice {
+    public static void main(String[] args) {
+       B obj;
+       obj=new B();
+       obj.show();
+       obj.config();
+       obj.run();
+       System.out.println(A.age +" "+A.area);
+    }
+}
+
+
+
+
